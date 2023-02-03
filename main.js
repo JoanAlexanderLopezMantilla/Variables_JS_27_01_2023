@@ -1,20 +1,25 @@
-// String Cadenas de texto
-let ciudadNacimiento = "Bucaramanga"
+// Se crea variable
+let nombre = "Joan Alexander Lopez Mantilla"
 
-//Number Valores numéricos.
-let edadUsuario = 35
+// Se prueban todas los tipos de consola del navegador
 
-//Boolean Representa una entidad lógica y puede tener dos valores: true y false.
-let estudianteComfenalco = true
+console.log(nombre);//El mas utilizado para mostrar en consola del navegador
+console.warn(nombre);//Muestra una advertencia
+console.error(nombre);//Muestra un error
+console.info(nombre);//Lo mismo que console.log
 
-//Object Un valor en memoria al que podemos acceder por un identificador
-let nombreEstudiantes = {
-    estudiante1: "Joan",
-    estudiante2: "Miguel",
-    estudiante3: "Andrea",
-}
+console.group(" Este es el grupo de consolas");
+    console.log(nombre);//El mas utilizado para mostrar en consola del navegador
+    console.warn(nombre);//Muestra una advertencia
+    console.error(nombre);//Muestra un error
+    console.info(nombre);//Lo mismo que console.log
+console.groupEnd();
 
-console.log(`La ciudad de nacimiento es ${ciudadNacimiento}`)
-console.log(`La edad del usuario es:  ${edadUsuario}`)
-console.log(`El estudiante es de Comfenmalco:  ${estudianteComfenalco}`)
-console.log(`Los Nombres de los estudiantes son ${nombreEstudiantes.estudiante1}, ${nombreEstudiantes.estudiante2}, ${nombreEstudiantes.estudiante3}`)
+console.table([nombre])
+console.table([{nombre_variable: nombre}]);
+
+//console.clear();
+
+console.time();
+    console.log("Este es el tiempo que demora en ejecutar");
+console.timeEnd();
